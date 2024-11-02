@@ -1,0 +1,73 @@
+/* Previous styles from task 9 remain the same */
+
+/* Section HERO
+============================= */
+.section-hero {
+    position: relative;
+    margin-top: -8.5rem;
+}
+
+.hero-homepage {
+    background-position: 75% 0;
+    background-repeat: no-repeat;
+    background-size: 90rem auto;
+    background-color: #010101;
+}
+
+.section-hero .section-body {
+    padding: 10rem 4rem;
+}
+
+.section-hero .section-category {
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+/* Grid */
+.row {
+    display: flex;
+    margin: -1rem;
+}
+
+[class*='col-'] {
+    margin: 1rem;
+}
+
+.col-1-3 {
+    width: calc((100% / 3) - 2rem);
+}
+
+.col-1-2 {
+    width: calc((100% / 2) - 2rem);
+}
+
+/* Header */
+.header {
+    padding: var(--header-padding);
+    position: relative;
+    z-index: 3;
+    background: transparent;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Section Latest news */
+.section-latest-news .row {
+    flex-direction: row-reverse;
+}
+
+/* Section SERVICES */
+.section-services .row {
+    flex-wrap: wrap;
+}
+
+/* Section ABOUT US */
+.section-about-us [class*='col-'] {
+    align-self: center;
+}
+
+/* All other existing styles remain */

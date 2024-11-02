@@ -1,0 +1,45 @@
+/* Keep all previous styles from 14-styles.css */
+
+/* Post
+============================= */
+
+/* Post content specific styles */
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post .post-content p:first-child {
+    font-size: var(--font-size-x-large);
+}
+
+.post .img-caption {
+    margin: 1rem 0;
+    padding: 0 .5rem;
+    font-size: var(--font-size-small);
+    color: var(--color-grey);
+    text-align: center;
+}
+
+/* Variables
+============================= */
+:root {
+    /* Colors */
+    --color-grey: #a0a0a0;  /* Added this new variable */
+}
+
+/* Previous styles remain unchanged */
+.post {
+    display: flex;
+}
+
+.post-content {
+    width: 100%;
+}
+
+.post-aside {
+    order: -1;
+    min-width: 20%;
+}
+
+/* All previous styles for hero-article, main-article, social nav, post meta, and tag list remain */

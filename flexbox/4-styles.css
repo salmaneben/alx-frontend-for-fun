@@ -1,0 +1,32 @@
+/* Keep all styles from previous tasks */
+
+/* Grid
+============================= */
+.row {
+    display: flex;
+    margin: -1rem;  /* Changed margin */
+}
+
+[class*='col-'] {
+    margin: 1rem;  /* Only margin, removed padding */
+}
+
+.col-1-3 {
+    width: calc((100% / 3) - 2rem);  /* Changed width calculation */
+}
+
+.col-1-2 {
+    width: calc((100% / 2) - 2rem);  /* Changed width calculation */
+}
+
+/* Section SERVICES 
+============================= */
+.section-services .row {
+    flex-wrap: wrap;
+}
+
+/* Section Latest news 
+============================= */
+.section-latest-news .row {
+    flex-direction: row-reverse;
+}
