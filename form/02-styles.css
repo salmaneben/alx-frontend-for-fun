@@ -1,0 +1,9 @@
+/* Previous styles from 01-styles.css */
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: none;
+    padding: 0 0 2rem;
+}
