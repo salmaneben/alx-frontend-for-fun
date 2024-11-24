@@ -1,5 +1,21 @@
-/* Write a Sass file that sorts the variable $list_to_sort and prints the sorted list in the debug output. */
-@import '103-sort_list.scss';
-@each $name in $list_to_sort {
-    @debug #{$name};
+echo '/* Sort strings */
+@import "103-sort_list";
+
+@function bubble_sort($list) {
+  $new-list: $list;
+  $length: length($new-list);
+  
+  @for $i from 1 through $length {
+    @for $j from 1 through $length - 1 {
+      @if nth($new-list, $j) > nth($new-list, $j+1) {
+        $temp: nth($new-list, $j);
+        $new-list: set-nth($new-list, $j, nth($new-list, $j+1));
+        $new-list: set-nth($new-list, $j+1, $temp);
+      }
+    }
+  }
+  
+  @return $new-list;
 }
+
+@debug bubble_sort($list_to_sort);' > 103-sort_strings.scss
